@@ -459,3 +459,17 @@ body {
 #backToTop i {
   pointer-events: none;
 }
+.download-cv {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #00eaff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.download-cv:hover {
+  background-color: #00c8d6;
+}
