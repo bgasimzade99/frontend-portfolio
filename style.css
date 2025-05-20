@@ -463,6 +463,8 @@ body {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
+  position:absolute;
+  bottom: 20px;
   background-color: #00eaff;
   color: #000;
   border-radius: 8px;
@@ -472,4 +474,81 @@ body {
 }
 .download-cv:hover {
   background-color: #00c8d6;
+}
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill {
+  color: #fff;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #444;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar .fill {
+  background: #00eaff;
+  height: 100%;
+}
+#skills h2 {
+  font-size: 2.4rem;           /* make it larger */
+  color: #00eaff;              /* keep your theme color */
+  text-align: center;          /* center the heading */
+  margin-bottom: 2rem;         /* space below */
+  margin-top: 3rem;            /* space above */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#skills h2::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 60px;
+  height: 3px;
+  background: #00eaff;
+  border-radius: 10px;
+}
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    max-height:100vh ;
+    display: flex;
+    padding: 3rem 1rem;
+    text-align: center;
+    flex-direction: column;
+  justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero-section .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
 }
