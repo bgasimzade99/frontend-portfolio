@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Babak's Portfolio</title>
+  <!-- Font Awesome 6 (Icons) -->
+  <!-- Font Awesome CDN (Latest) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="android-chrome-192x192.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  
+
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+  <img src="pr1.png" alt="Logo" class="logo-img">
+  <span>BABAK GASIMZADE</span>
+</div>
+      <ul class="nav-links">
+        <li><a href="#home"id="navHome">Home</a></li>
+        <li><a href="#about"id="navAbout">About</a></li>
+        <li><a href="#services"id="navServices">Services</a></li>
+        <li><a href="#contact"id="navContact">Contact</a></li>
+      </ul>
+      <select id="languageSelect">
+  <option value="en">🇬🇧 EN</option>
+  <option value="az">🇦🇿 AZ</option>
+  <option value="tr">🇹🇷 TR</option>
+</select>
+
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero section">
+    <div class="hero-content">
+      <h2>FOR WEBSITE AND WEB DEVELOPMENT</h2>
+      <h1>FRONT-END DEVELOPER<br>PORTFOLIO</h1>
+      <a href="#about" class="btn">See more about me</a>
+    </div>
+  </section>
+  <section id="about" class="about-section section animate-fade-in">
+  <div class="about-top">
+    <div class="info-box">
+      <h3>History</h3>
+      <p>
+        My journey began with a curiosity for code and a vision to create beautiful digital experiences. What started as basic HTML evolved into a passion for clean interfaces and responsive design. Today, I continue shaping ideas into interactive, modern websites.
+      </p>
+    </div>
+
+    <div class="about-center">
+      <img src="mee.jpg" alt="Babak Gasimzade" class="about-image" />
+    </div>
+
+    <div class="info-box">
+      <h3>CV / Projects</h3>
+      <p>
+        ● <strong>BGDeal</strong> – E-commerce front-end with <em>HTML, CSS, JS</em>.<br>
+        ● <strong>Snake Game</strong> – Classic game in <em>JS & Canvas</em>.<br>
+        ● <strong>FORM-BG</strong> – Form with <em>EmailJS</em>.<br>
+        ● <strong>Portfolio</strong> – Styled with <em>Tailwind</em>.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-bottom">
+    <h2 id="aboutTitle">I’m Babak Gasimzade</h2>
+    <p id="aboutText">
+      A front-end developer focused on building modern, responsive websites using
+      HTML, CSS, JavaScript, and React.
+    </p>
+  </div>
+</section>
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section section animate-zoom-in">
+  <div class="services-header">
+    <h2>OUR SERVICES</h2>
+    <h3 id="aboutText">What We Do?</h3>
+    <p id="aboutText">
+      From clean UI to fast-performing web apps — I help small businesses & ideas come to life with modern, responsive design.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card card section animate-stagger delay-1">
+      <div class="icon">💻</div>
+      <h4>Responsive Web Design</h4>
+      <p>Modern UI designs that adapt beautifully to all screen sizes.</p>
+    </div>
+
+    <div class="service-card card section animate-stagger delay-2">
+      <div class="icon">⚙️</div>
+      <h4>Front-End Development</h4>
+      <p>Clean code using HTML, CSS, JS, and React for fast web interfaces.</p>
+    </div>
+
+    <div class="service-card card section animate-stagger delay-3">
+      <div class="icon">📧</div>
+      <h4>Form Integration</h4>
+      <p>Interactive forms with EmailJS and validation for contact or feedback.</p>
+    </div>
+
+    <div class="service-card card section animate-stagger delay-4">
+      <div class="icon">🚀</div>
+      <h4>Performance Optimization</h4>
+      <p>Fast-loading sites using best practices for speed and SEO.</p>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section section animate-flip-in">
+  <h2>Contact Me</h2>
+  <p>If you'd like to work together or just say hello, feel free to drop a message!</p>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>project1/public/index.html
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="mailto:gasimzadababak@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/babak-gasimzade-b939a5234/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/bgasimzade99" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com/bgasimzade_99" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/profile.php?id=100063488318225" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible'); // 👈 Reset when out of view
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+<button id="backToTop" title="Back to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add("show");
+    } else {
+      backToTopBtn.classList.remove("show");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<script>
+  const translations = {
+    en: {
+      navHome: "Home",
+      navAbout: "About",
+      navServices: "Services",
+      navContact: "Contact",
+      aboutTitle: "I’m Babak Gasimzade",
+      aboutText: "A front-end developer focused on building modern, responsive websites using HTML, CSS, JavaScript, and React."
+    },
+    az: {
+      navHome: "Ana səhifə",
+      navAbout: "Haqqımda",
+      navServices: "Xidmətlər",
+      navContact: "Əlaqə",
+      aboutTitle: "Mən Babək Qasımzadə",
+      aboutText: "HTML, CSS, JavaScript və React istifadə edərək müasir və uyğunlaşan veb saytlar yaradan bir front-end developerəm."
+    },
+    tr: {
+      navHome: "Anasayfa",
+      navAbout: "Hakkımda",
+      navServices: "Hizmetler",
+      navContact: "İletişim",
+      aboutTitle: "Ben Babak Gasimzade",
+      aboutText: "HTML, CSS, JavaScript ve React kullanarak modern ve duyarlı web siteleri geliştiren bir front-end geliştiricisiyim."
+    }
+  };
+
+  const langSelect = document.getElementById("languageSelect");
+
+  langSelect.addEventListener("change", () => {
+    const selectedLang = langSelect.value;
+    for (let key in translations[selectedLang]) {
+      const element = document.getElementById(key);
+      if (element) {
+        element.textContent = translations[selectedLang][key];
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
